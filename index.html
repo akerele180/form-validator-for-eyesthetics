@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet"> -->
+    <title>FORM VALIDATOR</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <form id="form" class="form"> 
+            <h1>Register with Us</h1>
+            <div class="portion" id="portion">
+                <label for="username">Username</label>
+                <input type="text" name="username" minlength="5" id="username" placeholder="Enter your username">
+                <small class="error-msg">ERROR</small>
+            </div>
+            <div class="portion" id="portion">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email address">
+                <small class="error-msg">ERROR</small>
+            </div>
+            <div class="portion" id="portion">
+                <label for="password">Password</label>
+                <input type="password" name="password" minlength="5" maxlength="15" id="password" placeholder="Enter your password">
+                <small class="error-msg">ERROR</small>
+            </div>
+            <div class="portion" id="portion">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" minlength="5" maxlength="15" id="password2" placeholder="Re-enter your password">
+                <small class="error-msg">ERROR</small>
+            </div>
+            <button>Submit</button>
+            <p>Had an account already?<a href="#"> Log in</a> to Eyesthetics</p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
